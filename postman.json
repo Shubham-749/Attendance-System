@@ -1,0 +1,157 @@
+{
+    "collection": {
+        "info": {
+            "_postman_id": "9b55be9e-5576-4d73-a87b-bca31b1667b2",
+            "name": "Attendance",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "updatedAt": "2024-02-15T21:49:18.000Z",
+            "uid": "8984290-9b55be9e-5576-4d73-a87b-bca31b1667b2",
+            "createdAt": null,
+            "lastUpdatedBy": null
+        },
+        "item": [
+            {
+                "name": "checkin",
+                "id": "508724b3-dd94-4f65-b5bf-dba6eb4879cb",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\n  \"instructorId\": 123,\n  \"checkinTime\": \"2024-02-15T10:00:00Z\"\n}",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "localhost:3000/api/checkin",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "3000",
+                        "path": [
+                            "api",
+                            "checkin"
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "8984290-508724b3-dd94-4f65-b5bf-dba6eb4879cb"
+            },
+            {
+                "name": "checkout",
+                "id": "872a316b-c77c-49eb-944a-e4268a5f7b66",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\n  \"instructorId\": 123,\n  \"checkinTime\": \"2024-02-15T10:00:00Z\"\n}",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "localhost:3000/api/checkin",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "3000",
+                        "path": [
+                            "api",
+                            "checkin"
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "8984290-872a316b-c77c-49eb-944a-e4268a5f7b66"
+            },
+            {
+                "name": "set_daily_time",
+                "id": "fafaf508-ff97-47ef-a416-561a91e594b6",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\n    \"date\": \"2024-02-17\"\n}",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "localhost:3000/api/set_daily_time",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "3000",
+                        "path": [
+                            "api",
+                            "set_daily_time"
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "8984290-fafaf508-ff97-47ef-a416-561a91e594b6"
+            },
+            {
+                "name": "monthly report",
+                "id": "f6561145-5798-4564-bed5-4c109312190d",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "localhost:3000/api/monthly-report?month=02&year=2024",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "3000",
+                        "path": [
+                            "api",
+                            "monthly-report"
+                        ],
+                        "query": [
+                            {
+                                "key": "month",
+                                "value": "02"
+                            },
+                            {
+                                "key": "year",
+                                "value": "2024"
+                            }
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "8984290-f6561145-5798-4564-bed5-4c109312190d"
+            }
+        ]
+    }
+}
